@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <button onclick="addShow()" class="add__btn">ADD</button>
+    <div class="popup">
+        <form class="form" action="">
+            <i onclick="closeShow()" class="fa-solid fa-xmark" style="color: #000000;"></i>
+            <input class="form__name" type="text" placeholder="full name" required>
+            <input class="form__work" type="text" placeholder="your work" required>
+            <input class="form__graduation" type="text" placeholder="your graduation" required>
+            <button class="create__btn">Create</button>
+        </form>
+    </div>
+
+    <h2>Registered</h2>
+    <div class="wrapper">
+        <div class="card">
+            <div class="image">
+                <img src="./assets/image.png" alt="">
+            </div>
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem, ipsum dolor.</p>
+                <p>Lorem, ipsum dolor.</p>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram" style="color: #000000;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #000000;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #000000;"></i>
+                </div>
+                <button class="contact__btn">Contact</button>
+        </div>
+    </div>
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>
