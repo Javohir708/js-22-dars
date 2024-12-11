@@ -39,11 +39,11 @@ function createCard(user) {
     wrapperEl.appendChild(cardEl);
 }
 
-function renderUsers() {
+window.addEventListener("load", () => {
     users.forEach(user => {
         createCard(user);
     });
-}
+});
 
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -63,8 +63,4 @@ formEl.addEventListener("submit", (event) => {
     inputWork.value = "";
     inputGrad.value = "";
     closeShow();
-});
-
-window.addEventListener("load", () => {
-    renderUsers();
 });
